@@ -11,6 +11,7 @@
 		9B753ADA29FF9A36007F6DFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753AD929FF9A36007F6DFF /* ContentView.swift */; };
 		9B753ADC29FF9A37007F6DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B753ADB29FF9A37007F6DFF /* Assets.xcassets */; };
 		9B753ADF29FF9A37007F6DFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B753ADE29FF9A37007F6DFF /* Preview Assets.xcassets */; };
+		9B753AE629FF9B65007F6DFF /* UISliderViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753AE529FF9B65007F6DFF /* UISliderViewRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9B753AD929FF9A36007F6DFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B753ADB29FF9A37007F6DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B753ADE29FF9A37007F6DFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B753AE529FF9B65007F6DFF /* UISliderViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				9B753AD929FF9A36007F6DFF /* ContentView.swift */,
 				9B753ADB29FF9A37007F6DFF /* Assets.xcassets */,
 				9B753ADD29FF9A37007F6DFF /* Preview Content */,
+				9B753AE529FF9B65007F6DFF /* UISliderViewRepresentation.swift */,
 			);
 			path = SliderScore;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				9B753ADA29FF9A36007F6DFF /* ContentView.swift in Sources */,
 				9B753AD829FF9A36007F6DFF /* SliderScoreApp.swift in Sources */,
+				9B753AE629FF9B65007F6DFF /* UISliderViewRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
