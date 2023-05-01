@@ -11,6 +11,7 @@ struct UISliderViewRepresentation: UIViewRepresentable {
     @Binding var guessedValue: Float
     
     let targetValue: Int
+    let alpha: Int
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
@@ -30,21 +31,13 @@ struct UISliderViewRepresentation: UIViewRepresentable {
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = guessedValue
         
-        uiView.thumbTintColor = uiView.thumbTintColor?.withAlphaComponent(CGFloat(calculateAlpha()))
+        print(alpha)
+        
+        uiView.thumbTintColor = uiView.thumbTintColor?.withAlphaComponent(CGFloat(Double(alpha) / 100))
     }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(guessedNumber: $guessedValue)
-    }
-    
-    private func calculateAlpha() -> Float {
-        let difference = Float(targetValue - Int(guessedValue))
-        
-        if difference == 0 {
-            return 1
-        } else {
-            return Float(1 - abs(difference / 100))
-        }
     }
 }
 
@@ -65,6 +58,6 @@ extension UISliderViewRepresentation {
 
 struct UISliderViewRepresentation_Previews: PreviewProvider {
     static var previews: some View {
-        UISliderViewRepresentation(guessedValue: .constant(20), targetValue: 99)
+        UISliderViewRepresentation(guessedValue: .constant(20), targetValue: 99, alpha: 30)
     }
 }

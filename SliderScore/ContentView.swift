@@ -20,7 +20,8 @@ struct ContentView: View {
                 Text("0")
                 UISliderViewRepresentation(
                     guessedValue: $sliderValue,
-                    targetValue: targetValue
+                    targetValue: targetValue,
+                    alpha: computeScore()
                 )
                 Text("100")
             }
