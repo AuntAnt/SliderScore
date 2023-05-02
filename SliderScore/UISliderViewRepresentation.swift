@@ -31,8 +31,6 @@ struct UISliderViewRepresentation: UIViewRepresentable {
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = guessedValue
         
-        print(alpha)
-        
         uiView.thumbTintColor = uiView.thumbTintColor?.withAlphaComponent(CGFloat(Double(alpha) / 100))
     }
     
